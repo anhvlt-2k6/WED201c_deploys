@@ -51,6 +51,7 @@ jobs:
           fi
 
   deploy:
+    needs: download-and-commit
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
