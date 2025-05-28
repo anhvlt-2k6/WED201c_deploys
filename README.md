@@ -1,2 +1,2 @@
 # wed201c
-FPT WEB201c Basic push onto Gh
+FPT WED201c Basic push onto Gh
