@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  ai-agent-:
+  aiagent:
     runs-on: ubuntu-latest
 
     steps:
@@ -51,7 +51,7 @@ jobs:
           fi
 
   deploy:
-    needs: ai-agent
+    needs: aiagent
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
