@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  download-and-commit:
+  ai-agent-:
     runs-on: ubuntu-latest
 
     steps:
@@ -35,10 +35,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Fetch Dynamic Content 
+      - name: AI Agent is preparing your local environment...
         run: python3 fetch.py
 
-      - name: Commit Changes
+      - name: AI Agent is pushing the changes before your website deployment...
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -51,7 +51,7 @@ jobs:
           fi
 
   deploy:
-    needs: download-and-commit
+    needs: ai-agent
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
