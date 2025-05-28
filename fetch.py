@@ -33,5 +33,5 @@ with open("index.html", "w") as index_file:
     for htm_file in find_htm_files(path):
         if "index.html" not in htm_file:
             htm_link = os.path.relpath(htm_file, path)
-            index_file.write('<li><a href="{htm_link}">{htm_link}</a></li>'.format(htm_link=htm_link))
+            index_file.write('\n<li><a href="{htm_link}">{htm_link}</a></li>\n'.format(htm_link=htm_link))
     index_file.write(htm_footer)
