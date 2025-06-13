@@ -1,0 +1,194 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #00be4d;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    color: white;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    color: #00be4d;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffde00;
+    color: #000000 !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    border: none;
+    transition: background 0.2s;
+    text-align: center;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+main h2 {
+    font-size: 2.5em;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+main h3 {
+    font-size: 1.8em;
+    color: #333333;
+    margin-top: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555555;
+}
+
+main table {
+    margin: auto;
+    width: 50%;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+footer a {
+    color: #00be4d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Service Page */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.service-card {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #000000 !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    border: none;
+    text-align: center;
+}
+
+.service-card h2 {
+    margin-bottom: 5px;
+    color: #00be4d;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 15px 20px auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 20px;
+}
+
+.contact-form button {
+    background-color: #00be4d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #009a3f;
+}
+
+.contact-form #message {
+    height: 100px;
+    resize: vertical;
+}
