@@ -11,8 +11,11 @@ path = "./"
 htm_header = """
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
   <title>Vo Luu Tuong Anh - WED201c Repository</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="anhvlt-2k6" />
+  <meta name="robots" content="none" />
 </head>
 <body>
   <h1>WED201c Repository for submission</h1>
