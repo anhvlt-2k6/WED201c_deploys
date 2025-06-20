@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  aiagent:
+  path_generate:
     runs-on: ubuntu-latest
 
     steps:
@@ -35,10 +35,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: AI Agent is preparing your local environment...
+      - name: Python 3 is exporting the indexing file...
         run: python3 fetch.py
 
-      - name: AI Agent is pushing the changes before your website deployment...
+      - name: GitHub Actions is pushing the changes before your website deployment...
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -51,7 +51,7 @@ jobs:
           fi
 
   deploy:
-    needs: aiagent
+    needs: path_generate
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
