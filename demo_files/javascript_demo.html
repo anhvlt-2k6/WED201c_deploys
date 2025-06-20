@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <p id="name"></p>
+    <!-- JavaScript can change HTML styles -->
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <script>
+        var askname = prompt("What is your name?");
+        if (askname != null) {
+            document.getElementById("name").innerHTML = "Hello " + askname + "!";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>What Can JavaScript Do?</h1>
+
+    <h2>Change HTML Content</h2>
+    <p>JavaScript can change HTML content.</p>
+
+    <button type="button" onclick='changeOnClickButton1()'>Click Me to show the Hello World!</button>
+    <button type="button" onclick='centerTheText()'>Click Me to change the text color!</button>
+
+    <br><br>
+
+    <button type="button" onclick='makeAnElementDisappear()'>Click Me to make the text disappear!</button>
+    <button type="button" onclick='makeAnElementReappear()'>Click Me to make the text reappear!</button>
+
+    <p id="changeTheStyle" style="color: blue">JavaScript can change HTML styles.</p>
+
+    <p id="demo"></p>
+
+    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+
+
+</body>
+
+<script>
+    function changeOnClickButton1() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+
+    function centerTheText() {
+        document.getElementById("changeTheStyle").style.color = "red";
+    }
+
+    function makeAnElementDisappear() {
+        document.getElementById("changeTheStyle").style.display = "none";
+    }
+
+    function makeAnElementReappear() {
+        document.getElementById("changeTheStyle").style.display = "block";
+    }
+
+</script>
+
+</html>

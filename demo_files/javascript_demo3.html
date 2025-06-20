@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body onload = "Hello()"> 
+    <p> This is paragraph one </p> 
+    <p onclick = "Hello()"> This is paragraph two </p>
+</body>
+
+<script>
+    function changeOnClickButton1() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+
+    function centerTheText() {
+        document.getElementById("changeTheStyle").style.color = "red";
+    }
+
+    function makeAnElementDisappear() {
+        document.getElementById("changeTheStyle").style.display = "none";
+    }
+
+    function makeAnElementReappear() {
+        document.getElementById("changeTheStyle").style.display = "block";
+    }
+
+</script>
+
+</html>
