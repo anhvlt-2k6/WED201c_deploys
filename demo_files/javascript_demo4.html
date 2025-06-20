@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+
+<body>
+
+    <button onclick="loadFruits()" >Click to load fruit</button>
+
+    <div>
+        <p id="fruitListContent"> </p>
+    </div>
+
+    <script>
+        var fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+
+        function loadFruits() {
+            document.getElementById("fruitListContent").innerHTML = fruits.join(", ");
+        }
+    </script>
+</body>
+
+</html>
