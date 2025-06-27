@@ -1,0 +1,35 @@
+.table th,
+.table td {
+    vertical-align: middle !important;
+}
+
+.table td.text-left {
+    text-align: left !important;
+}
+
+.table thead th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+.btn-info {
+    background-color: #17c1e8;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-info:hover,
+.btn-warning:hover,
+.btn-danger:hover {
+    opacity: 0.85;
+}
