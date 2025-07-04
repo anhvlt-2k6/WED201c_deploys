@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<!-- 
+<!DOCTYPE html> Declare this as a file in HTML5 format to help the browser
+know how much html version you are using, yes or no but it will be limited to many
+new tags, attributes in tags that are not detected by the browser.
+-->
+
+<html lang="en">
+
+    <!-- <head> tag is where you define the meta information about your HTML document, such as the character set, viewport settings, and title. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>My Website</title>
+    </head>
+
+    <!-- <body> tag is where you put the content of your HTML document, such as text, images, and links. -->
+    <!-- The <body> tag is the main content of the HTML document. -->
+
+    <body>
+
+        <!-- <hx> tags are the header tags, where x from 1 to 6. The bigger the x is, the smaller of header is -->
+
+        <h1>This is the biggest header</h1>
+        <h2>This is the second biggest header</h2>
+        <h3>This is the third biggest header</h3>
+        <h4>This is the fourth biggest header</h4>
+        <h5>This is the fifth biggest header</h5>
+        <h6>This is the smallest header</h6>
+
+        <!-- <p> tag is the paragraph tag, where you put the text of your HTML document. -->
+        <p>
+            This is a paragraph of text in my HTML document.
+            <br>
+            With line-break feature, of course.
+        </p>
+
+        <!-- <ol> tag is the ordered list tag  -->
+        <ol type="1">
+            <li> Element 01 </li>
+            <li> Element 02 </li>
+            <li> Element 03 </li>
+        </ol>
+
+        <!-- <ul> tag is the unordered list tag  -->
+        <ul style="list-style-type: circle;">
+            <li> Element 01 </li>
+            <li> Element 02 </li>
+            <li> Element 03 </li>
+        </ul>
+
+        <!-- <dl> is description list -->
+        <dl style="list-style-type: lower-roman;">
+            <dt>Term 01</dt>
+                <dd>Description 01</dd>
+            <dt>Term 02</dt>
+                <dd>Description 02</dd>
+            <dt>Term 03</dt>
+                <dd>Description 03</dd>
+        </dl>
+
+        <!-- 
+        <table> is a table 
+            <tr> Used to define a row inside a table
+            <th> Used to define a cell (header) within the row
+            <td> Used to define a (normal) cell within the row
+        Exclusively, 3 special components:
+            <thead> Used to determine which rows belong to the "head" of the table
+            <tbody> Used to determine which rows belong to the "body" of the table
+            <tfoot> Used to determine which rows are in the "footers" of the table
+        
+        <caption> is for title of the table
+        
+        - To merge cells horizontally, we put the “colspan” attribute inside the opening
+        tag of the cell where we want to start merging it with the cells on the right.
+        - To merge cells vertically, we put the “rowspan” attribute inside the opening
+        tag of the cell where we want to start merging it with the cells below.
+
+        -->
+        
+        <table>
+            <caption align="center">My Table</caption>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Cell 01</td>
+                    <td>Cell 02</td>
+                    <td>Cell 03</td>
+                </tr>
+                <tr>
+                    <td>Cell 04</td>
+                    <td>Cell 05</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Cell 06</td>
+                </tr>
+            </thead>
+        </table>
+
+        <!-- 
+        Semantic tag Function
+            <header>: The <header> element defines the beginning of a document page or the beginning of a paragraph
+            <nav>: The <nav> element is used to define a set of in-page navigation links such as menus
+            <section>: Section is a group of similar content with the same topic
+            <article>: The <article> element is used for independent content and contains its own content
+            <aside>: The <aside> element defines the content next to the page's content
+            <footer>: The <footer> element defines the end of a document page or the end of a paragraph
+            <figure>: Mark only one image in the document
+            <figurecaption>: Defines a caption for the <figure> tag
+        -->
+        
+        <!-- 
+        <a> tag are the inline tags 
+        where 
+            href is the link to the page you want to go to. it follows the URI scheme(1, 2)
+            target is the target of the link, where _blank is to open the link in a new tab, or _self to open the link in the same tab
+
+        (1) https://www.rfc-editor.org/rfc/rfc7595
+        (2) https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml
+        -->
+        
+        <a href="https://www.google.com" target="_blank">This is a link to Google</a>
+
+        <!-- Media tags 
+            <img> is the image tag, where you put the image of your HTML document, includes source, alt, width, height
+            <video> is the video tag, where you put the video of your HTML document, includes source, width, height, autoplay, controls
+            <audio> is the audio tag, where you put the audio of your HTML document, includes source, autoplay, controls
+            <source> is the source tag, where you put the source of the video or audio
+            <embed> is the embed tag, where you put the embed of your HTML document, includes source, width, height
+            <iframe> is the iframe tag, where you put the iframe of your HTML document, includes source, width, height
+        -->
+
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" width="150" height="150">
+        <br>
+        <video width="320" height="240" autoplay controls>
+            <source src="movie.mp4" type="video/mp4">
+            <br>
+            <source src="movie.ogg" type="video/ogg">
+        </video>
+        <br>
+        <audio autoplay controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            <br>
+            <source src="audio.ogg" type="audio/ogg">
+        </audio>
+
+        <!-- <div> is a generic container for flow content. It has no specific semantic meaning, but can be useful for styling or scripting purposes. -->
+        <div>
+            <p>This is a paragraph inside a div.</p>
+            <p>This is another paragraph inside the same div.</p>
+        </div>
+
+        <!-- <span> is a generic inline container for phrasing content. It has no specific semantic meaning, but can be useful for styling or scripting purposes. -->
+        <span>This is a span element.</span>
+    </body>
+</html>
