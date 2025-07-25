@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Bookstore</div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for books...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <section id="book-detail" class="book-detail">
+        <div class="book-detail-container">
+            <button id="close-detail">X</button>
+            <div class="book-detail-image">
+                <img src="images/book-1.jpg" alt="Harry Potter">
+            </div>
+            <div class="book-detail-info">
+                <h2>...</h2>
+                <p class="author">...</p>
+                <p class="price">...</p>
+                <p class="description">
+                </p>
+                <div class="book-calculator">
+                    <h3>Calculate Total</h3>
+                    <input type="number" id="quantity" placeholder="Quantity">
+                    <p>Price per book: <span id="price-per-book"></span></p>
+                    <button id="calculate-button">Calculate</button>
+                    <p>Total: <span id="total-price"></span></p>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-books">
+        <h2>Featured Books</h2>
+        <div class="book-grid">
+            <div class="book-item">
+                <img src="images/book-1.jpg" alt="Book 1" width="200">
+                <h3>Harry Potter and the Sorcerer's Stone</h3>
+                <p class="author">J.K. Rowling</p>
+                <p class="book-description">The first book in the beloved Harry Potter....</p>
+                <p class="price">$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="images/book-2.jpg" alt="Book 2" width="200px">
+                <h3>The Great Gatsby</h3>
+                <p class="author">F. Scott Fitzgerald</p>
+                <p class="book-description">A novel set in the Jazz Age, it explores themes of wealth...</p>
+                <p class="price">$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="images/book-3.jpg" alt="Book 3" width="200px">
+                <h3>To Kill a Mockingbird</h3>
+                <p class="author">Harper Lee</p>
+                <p class="book-description">A powerful story set in the American South, it tackles issues...</p>
+                <p class="price">$15.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="images/book-4.jpg" alt="Book 4" width="200px">
+                <h3>1984</h3>
+                <p class="author">George Orwell</p>
+                <p class="book-description">A dystopian novel that depicts a totalitarian regime...</p>
+                <p class="price">$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="images/book-5.jpg" alt="Book 5" width="200px">
+                <h3>The Catcher in the Rye</h3>
+                <p class="author">J.D. Salinger</p>
+                <p class="book-description">Narrated by the teenage protagonist Holden Caulfield...</p>
+                <p class="price">$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reading-culture">
+        <h2>The Importance of Reading Culture</h2>
+        <div class="reading-culture-content">
+            <p>
+                Reading is a fundamental skill that enriches our lives in countless ways. It expands our knowledge,
+                broadens our perspectives, and fosters empathy. A strong reading culture within a society promotes:
+            </p>
+            <ul>
+                <li><strong>Lifelong Learning:</strong> Reading cultivates a thirst for knowledge and encourages
+                    continuous learning.</li>
+                <li><strong>Critical Thinking:</strong> Engaging with diverse texts helps us analyze information and
+                    develop critical thinking skills.</li>
+                <li><strong>Creativity and Imagination:</strong> Reading exposes us to new ideas and worlds, sparking
+                    our creativity and imagination.</li>
+                <li><strong>Communication Skills:</strong> Reading improves our vocabulary, grammar, and writing
+                    abilities.</li>
+                <li><strong>Empathy and Understanding:</strong> By immersing ourselves in different narratives, we gain
+                    a better understanding of diverse perspectives and cultures.</li>
+            </ul>
+            <h3>How to Promote Reading Culture</h3>
+            <p>
+                There are many ways to promote a vibrant reading culture:
+            </p>
+            <ol>
+                <li><strong>Make books accessible:</strong> Ensure that books are readily available in libraries,
+                    schools, and communities.</li>
+                <li><strong>Encourage reading from a young age:</strong> Foster a love of reading in children through
+                    storytelling, read-alouds, and access to age-appropriate books.</li>
+                <li><strong>Create reading communities:</strong> Book clubs, reading groups, and online forums can
+                    provide opportunities for people to share their reading experiences and engage in discussions.</li>
+                <li><strong>Support authors and publishers:</strong> Recognize the value of writers and publishers in
+                    creating and disseminating knowledge and stories.</li>
+                <li><strong>Utilize technology:</strong> E-books and audiobooks can make reading more accessible and
+                    convenient for many people.</li>
+            </ol>
+            <p>
+                By valuing and promoting reading, we can create a more informed, engaged, and compassionate society.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Online Bookstore</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

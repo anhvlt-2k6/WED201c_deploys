@@ -1,0 +1,305 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* REQUIREMENT 1 */
+
+ul, li, a {
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+    padding-left: 5px;
+    text-decoration: #334b63;
+    color: grey;
+}
+
+/* END REQUIREMENT 1 */
+
+.search-bar input {
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+}
+
+.featured-books,
+.reading-culture
+{
+    margin: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* REQUIREMENT 2 */
+
+.book-grid {
+    display: flex;
+}
+
+.book-item {
+    width: auto;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: medium;
+
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.price {
+    color:#007bff;
+}
+
+button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+}
+
+/* END REQUIREMENT 2 */
+
+/* REQUIREMENT 3 */
+
+.reading-culture-content ul li {
+    display: flex;
+}
+
+.reading-culture-content strong {
+    color: red;
+}
+
+.reading-culture-content h3 {
+    color: lightskyblue;
+}
+
+/* END REQUIREMENT 3 */
+
+
+/* Book Detail Section */
+.book-detail {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.book-detail-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    position: relative;
+}
+
+.book-detail-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.book-detail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-detail-info {
+    flex: 2;
+}
+
+.book-detail h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.book-detail .author {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.book-detail .price {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.book-detail .description {
+    margin-bottom: 10px;
+}
+
+.book-detail .isbn {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#close-detail {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* Book Calculator */
+.book-calculator {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.book-calculator h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.book-calculator input {
+    width: 80px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.book-calculator button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.book-calculator button:hover {
+    background-color: #3e8E41;
+}
+
+#price-per-book,
+#total-price {
+    font-weight: bold;
+}
+
+/* Reading Culture Section */
+.reading-culture {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.reading-culture h2 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.reading-culture-content {
+    line-height: 1.7;
+    color: #34495e;
+}
+
+.reading-culture p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.reading-culture ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.reading-culture ol {
+    list-style-type: decimal;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.reading-culture li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.reading-culture strong {
+    font-weight: bold;
+}
+
+.reading-culture h3 {
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.reading-culture a {
+    text-decoration: none;
+}
+
+.reading-culture a:hover {
+    text-decoration: underline;
+}
+
+.reading-culture blockquote {
+    border-left: 5px solid #ddd;
+    padding-left: 15px;
+    font-style: italic;
+    margin: 15px 0;
+}
