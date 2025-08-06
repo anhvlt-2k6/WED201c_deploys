@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Static Form</title>
+    </header>
+    <body>
+        <head></head>
+        <main>
+            <h1>Next of the HTML, that is the form</h1>
+            
+            <h2>Here is a basic form, with text input, submit, and reset button</h2>
+            <form target="_self" method="post">
+                <label>Text input</label>
+                <input type="text" placeholder="Enter a text">
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+            
+            <h2>Radio selective</h2>
+            <form target="_self" method="post">
+                <label>What is your favorite subject</label>
+                <br>
+
+                <input type="radio" name="fav_subject" value="Math" checked>
+                <label>Math</label>
+                <br>
+
+                <input type="radio" name="fav_subject" value="Chemistry">
+                <label>Chemistry</label>
+                <br>
+
+                <input type="radio" name="fav_subject" value="Biology">
+                <label>Biology</label>
+                <br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <h2>Checkbox selective</h2>
+            <form target="_self" method="post">
+                <label>What is your favorite Linux distro?</label>
+                <br>
+
+                <input type="checkbox" value="Ubuntu" checked>
+                <label>Ubuntu</label>
+                <br>
+
+                <input type="checkbox" value="Kali Linux">
+                <label>Kali Linux</label>
+                <br>
+
+                <input type="checkbox" value="Mint Linux">
+                <label>Mint Linux</label>
+                <br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <h2>Other common forms</h2>
+            <form target="_self" method="post">
+                <label>Select color</label>
+                <input type="color">
+                <br>
+
+                <label>Select Date</label>
+                <input type="date">
+                <br>
+
+                <label>Select File</label>
+                <input type="file">
+                <br>
+
+                <label>Text Area</label>
+                <textarea></textarea>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
