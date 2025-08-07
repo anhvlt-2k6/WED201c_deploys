@@ -1,0 +1,33 @@
+.table1 {
+    height: 300px;
+    width: 300px;
+    border: 5px dashed;
+    border-color: purple;
+}
+
+.table2 {
+    height: 300px;
+    width: 300px;
+    border: 5px;
+    border-style: double;
+    border-color: blue red green yellow;
+}
+
+.table3 {
+    height: 300px;
+    width: 300px;
+    border: 5px;
+    border-style: dotted;
+    border-radius: 30px 0px 30px 0px;
+    border-color: purple;
+    background-color: pink;
+}
+
+.table4 {
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-width: 0px 5px 0px 5px;
+    border-color: black;
+    background-color: cyan;
+}

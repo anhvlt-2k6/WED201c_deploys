@@ -1,0 +1,16 @@
+.box {
+    height: 150px;
+    width: 450px;
+    border-width: 5px;
+    border-style: dotted solid double none;
+    border-color: green black blue white;
+    align-content: center;
+}
+
+.container {
+    text-align: left;
+    background-color: gray;
+    border-width: 3px;
+    border-style: dotted solid solid solid;
+    border-color: black black pink black;
+}

@@ -1,0 +1,23 @@
+p {
+    font-size: larger;
+}
+
+p:first-of-type {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+p:nth-child(2)::first-letter {
+    color: red;
+    font-size: larger;
+}
+
+p:nth-child(2)::first-line {
+    color: green;
+}
+
+p:last-of-type {
+    color: blueviolet;
+    background-color: lightgoldenrodyellow;
+}

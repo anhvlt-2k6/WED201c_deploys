@@ -1,0 +1,29 @@
+div {
+    width: 200px;
+    border: 5px double blueviolet;
+    padding: 10px;
+}
+
+#link01 {
+    background-color: palegoldenrod;
+    color: black;
+    border: 5px solid blue;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#link02 {
+    background-color: palegoldenrod;
+    color: green;
+    border-top: 5px dashed red;
+    border-bottom: 5px dashed red;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+}

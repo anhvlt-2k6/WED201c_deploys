@@ -1,0 +1,44 @@
+header {
+    height: 500px;
+    width: auto;
+
+    align-items: center;
+    align-self: center;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 10px;
+
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+ul {
+    padding: 1px;
+    margin: 1px;
+
+    text-align: center;
+}
+
+li {
+    align-content: center;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: cyan;
+    border-radius: 20px 0px;
+    border-style: solid;
+    border-color: burlywood;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
