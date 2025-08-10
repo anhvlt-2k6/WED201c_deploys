@@ -70,27 +70,23 @@ bookItems.forEach(item => {
 // Add click event listener to the close button
 closeDetail.addEventListener('click', hideBookDetail);
 
+const totalPriceDisplay = document.querySelector('total-price');
 
 // Add event listener to the calculate button
 //REQUIREMENT 4
-calculateButton.addEventListener('click', calculateTotalPrice);
+calculateButton.addEventListener('click', calculateTotalPrice())
 
 // Function to calculate total price
 function calculateTotalPrice() {
-    const priceText = document.querySelector('.book-detail-info .price').textContent.trim();
-    const price = parseFloat(priceText.replace(/[^0-9.]/g, ''));
     const quantity = parseInt(document.getElementById('quantity').value, 10);
+    const price = parseFloat(pricePerBook.textContent.trim().replace('$', '')); // Remove '$' sign
+    
+    document.getElementById('price-per-book').textContent = "$" + price.toFixed(2);
 
-    displayPricePerBook(price);
-
-    if (!isNaN(price) && !isNaN(quantity) && quantity > 0) {
-        const total = (price * quantity).toFixed(2);
-        document.getElementById('total-price').textContent = `$${total}`;
+    if (!isNaN(quantity) && !isNaN(price)) {
+        const total = quantity * price;
+        totalPriceDisplay.textContent = '$' + total.toFixed(2); // Format to 2 decimal places
     } else {
-        document.getElementById('total-price').textContent = '';
+        totalPriceDisplay.textContent = 'Invalid input';
     }
-}
-
-function displayPricePerBook(price) {
-   document.getElementById('price-per-book').textContent = "$" + price.toFixed(2);
 }
