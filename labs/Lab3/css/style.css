@@ -30,26 +30,21 @@ header {
 
 /* REQUIREMENT 1 */
 
-header ul {
-    margin-left: 5px;
-    text-align: center;
-}
-
 header ul li {
     display: inline-block;
+    list-style: none;
+    padding-left: 5px;
     margin-left: 5px;
-    margin-right: 5px;
 }
 
 header ul li a {
-    color: gray;
+    color: black;
+    text-decoration-color: white;
     text-decoration-line: none;
 }
 
 header ul .active a {
-    color: black;
-    text-decoration-line: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 /* END REQUIREMENT 1 */
@@ -81,37 +76,43 @@ footer {
 
 /* REQUIREMENT 2 */
 
-.book-grid {
+.featured-books .book-grid {
     display: flex;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
-.book-grid .book-item {
-    display: inline-block;
+.featured-books .book-grid .book-item {
+    margin-left: 5px;
     width: 19%;
 
-    text-align: center;
-
-    border-radius: 5px;
-    border-width: 2px;
-    border-style: solid;
     border-color: gray;
-}
-
-.book-grid .book-item .price {
-    color: #007bff;
-    margin-top: 5px;
-}
-
-.book-grid .book-item button {
+    border-radius: 5px;
     border-width: 3px;
-    border-color: #007bff;
     border-style: solid;
-    color: whitesmoke;
-    margin-top: 5px;
+
+    padding: 10px 10px 10px 10px;
+
+    text-align: center;
+}
+
+.featured-books .book-grid .book-item img {
+    margin: 5px 5px 5px 5px;
+
+    border-color: white;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.featured-books .book-grid .book-item .price {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.featured-books .book-grid .book-item button {
+    color: white;
     background-color: #007bff;
-    
+    border-width: 0px 0px 0px 0px;
+    padding: 5px 5px 5px 5px;
 }
 
 /* END REQUIREMENT 2 */
@@ -123,7 +124,7 @@ footer {
 }
 
 .reading-culture .reading-culture-content h3 {
-    color:#007bff;
+    color: #007bff;
 }
 
 /* END REQUIREMENT 3 */

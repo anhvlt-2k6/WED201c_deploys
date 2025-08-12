@@ -32,7 +32,8 @@ const quantityInput = document.getElementById('quantity');
 const pricePerBook = document.getElementById('price-per-book');
 const calculateButton = document.getElementById('calculate-button');
 //REQUIREMENT 4
-
+const totalPrice = document.getElementById('total-price');
+var pricePB;
 // Function to show book details
 function showBookDetail(event) {
     const clickedBook = event.currentTarget; // Get the clicked book item
@@ -53,7 +54,8 @@ function showBookDetail(event) {
 
     // Populate price per book in calculator
     //REQUIREMENT 4
-
+    pricePerBook.innerHTML = price;
+    pricePB = price;
     bookDetail.style.display = 'block'; // Show the detail section
 }
 
@@ -70,23 +72,19 @@ bookItems.forEach(item => {
 // Add click event listener to the close button
 closeDetail.addEventListener('click', hideBookDetail);
 
-const totalPriceDisplay = document.querySelector('total-price');
 
 // Add event listener to the calculate button
 //REQUIREMENT 4
-calculateButton.addEventListener('click', calculateTotalPrice())
+calculateButton.addEventListener('click', calculcatePrice);
 
-// Function to calculate total price
-function calculateTotalPrice() {
-    const quantity = parseInt(document.getElementById('quantity').value, 10);
-    const price = parseFloat(pricePerBook.textContent.trim().replace('$', '')); // Remove '$' sign
+function calculcatePrice() {
+    var quan = parseInt(quantityInput.value);
+    var pircePerB = parseFloat(pricePB.replace("$", ""));
     
-    document.getElementById('price-per-book').textContent = "$" + price.toFixed(2);
-
-    if (!isNaN(quantity) && !isNaN(price)) {
-        const total = quantity * price;
-        totalPriceDisplay.textContent = '$' + total.toFixed(2); // Format to 2 decimal places
+    var total = quan * pircePerB;
+    if (total != null && !isNaN(total)) {
+        totalPrice.innerHTML = "$" + `${total}`;
     } else {
-        totalPriceDisplay.textContent = 'Invalid input';
+        totalPrice.innerHTML = "Invalid Input";
     }
 }
