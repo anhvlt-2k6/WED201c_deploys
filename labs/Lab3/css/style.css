@@ -119,7 +119,11 @@ footer {
 
 /* REQUIREMENT 3 */
 
-.reading-culture .reading-culture-content ul, ol li strong {
+.reading-culture .reading-culture-content ul li strong {
+    color: red;
+}
+
+.reading-culture .reading-culture-content ol li strong {
     color: red;
 }
 

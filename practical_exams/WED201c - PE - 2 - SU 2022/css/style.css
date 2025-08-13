@@ -1,0 +1,215 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-content {
+    display: inline-block;
+}
+
+.header .header-logo img {
+    width: 100px;
+}
+
+.header .header-nav {
+    margin-left: 10%;
+    margin-right: 35%;
+}
+
+.header .header-nav ul li {
+    display: inline-block;
+}
+
+.header .header-nav ul li a {
+    color: #58acc2;
+    text-decoration-line: none;
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header .header-search-bar {
+    margin-left: 10%;
+}
+
+.header .header-search-bar .btnsearch {
+    border-width: 0px;
+    border-radius: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+    height: 25px;
+    color: white;
+    background-color: #0bafaf;
+}
+
+.banner-image {
+    display: flex;
+    align-items: center;
+}
+
+.banner-image img {
+    display: inline-block;
+    width: 120%;
+}
+
+.promotion h1 {
+    text-align: center;
+    color: #21a094;
+}
+
+.promotion .promotion-content {
+    display: flex;
+    align-items: center;
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.promotion .promotion-content .promotion-tour {
+    display: flex;
+    align-items: center;
+
+    box-shadow: 1px 1px 1px 1px black;
+
+    margin-left: 5px;
+    width: 1000px;
+    height: 300px;
+}
+
+.promotion .promotion-content .promotion-tour .promotion-tour-img img {
+    height: 300px;
+    width: 350px;
+}
+
+.promotion .promotion-content .promotion-tour .promotion-tour-p {
+    margin-left: 10px;
+}
+
+.promotion-banner {
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hotel-order {
+    display: flex;
+    align-items: center;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    margin-bottom: 50px;
+}
+
+.hotel-order .tour-order {
+    display: inline-block;
+
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+
+    margin-right: 100px;
+    height: 500px;
+}
+
+.hotel-order .tour-order h1 {
+    text-align: center;
+    color: #0bafaf;
+}
+
+.hotels {
+    text-align: center;
+
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.hotels img {
+    border-radius: 10px;
+}
+
+.hotels .substract-money {
+    color: red;
+}
+
+.tour-form {
+    margin-left: 100px;
+    width: 500px;
+}
+
+.tour-form h1 {
+    margin-top: 30px;
+}
+
+.tour-form form {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.input-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-line .user-input-text {
+    width: 290px;
+}
+
+.FullName {
+    margin-right: 5px;
+    color: #ef8b1a;
+}
+
+.Phone {
+    margin-right: 27px;
+    color: #ef8b1a;
+}
+
+.Email {
+    margin-right: 34px;
+    color: #ef8b1a;
+}
+
+.footer {
+    background-color: #2ec5c0;
+    text-align: center;
+    color: white;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.form-button-style {
+    border-style: none;
+    padding: 10px 10px 10px 10px;
+    background-color: #ef8b1a;
+    color: white;
+    font-weight: bold;
+}
+
+.form-buttons {
+    margin-left: 250px;
+}

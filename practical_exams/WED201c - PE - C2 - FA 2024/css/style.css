@@ -1,0 +1,169 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-logo img {
+    display: flex;
+    margin: auto;
+}
+
+.header-nav {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    background-color: #1483ba;
+}
+
+.header-nav div {
+    display: flex;
+    margin: auto;
+}
+
+.header-nav div ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav div ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.header-nav div ul li a {
+    color: white;
+    text-decoration-line: none;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.content-banner {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.content-banner img {
+    height: 525px;
+}
+
+.mango-beach-header {
+    color: #2d838a;
+    text-align: center;
+}
+
+.mango-beach .mango-beach-visual {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.mango-beach .mb-vis img {
+    width: 1000px;
+}
+
+.mango-beach .mb-vis-2 .mb-vis-2-img {
+    margin-bottom: 150px;
+}
+
+.mango-beach .mango-beach-visual h2 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+    color: orange;
+}
+
+.mango-beach .mango-beach-visual p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 800px;
+    text-align: justify;
+}
+
+.mango-beach .mango-beach-visual .mango-beach-button {
+    background-color: #28aede;
+    width: 100px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-left: 700px;
+}
+
+.mango-beach .mango-beach-visual .mango-beach-button a {
+    text-align: center;
+    text-decoration-line: none;
+    color: white;
+}
+
+.muine-bay-header {
+    color: #1483ba;
+    text-align: center;
+}
+
+.miune-bay {
+    display: flex;
+    align-items: center;
+}
+
+.miune-bay .muine-bay-detail .muine-bay-img-line1 img {
+    display: flex;
+    height: 200px;
+}
+
+.miune-bay .muine-bay-detail .muine-bay-img-row1 {
+    display: inline-block;
+}
+
+.miune-bay .muine-bay-detail .muine-bay-img-row2 img {
+    width: 230px;
+}
+
+.muine-bay-detail {
+    display: inline-block;
+    align-items: center;
+}
+
+.muine-bay-comment {
+    width: 900px;
+    height: 600px;
+
+    margin-left: 20px;
+    
+    background-color: #64605f;
+    color: white;
+}
+
+.muine-bay-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content-title-header {
+    color: #1483ba;
+    text-align: center;
+}
+
+.content-title {
+    margin-left: 105px;
+    margin-right: 105px;
+}
+
+.content-title-places {
+    display: inline-block;
+}
+
+.content-title-places imgdiv {
+    display: flex;
+}
+
+.footer {
+    background-color: #1483ba;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer p {
+    color:white;
+    margin-left: 700px;
+}
