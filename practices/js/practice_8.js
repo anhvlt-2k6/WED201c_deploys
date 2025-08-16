@@ -5,7 +5,7 @@ const submitButton = document.getElementById('submit-button');
 const emailResult = document.getElementById('email-result-box');
 
 submitButton.addEventListener('click', () => {
-    var regexEmail = /([A-z0-9._-]{1,})@(([A-z0-9]{2,}).[A-z0-9]{2,})/;
+    var regexEmail = /([A-Za-z0-9._-]{1,})@(([A-Za-z0-9]{2,}).[A-Za-z0-9]{2,})/;
     var email = emailBox.value.trim();
     
     if (regexEmail.test(email)) {
