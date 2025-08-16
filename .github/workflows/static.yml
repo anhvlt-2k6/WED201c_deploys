@@ -48,6 +48,7 @@ jobs:
           else
             git commit -m "Update static index.html for dynamic content"
             git push
+            sleep 5
           fi
 
   deploy:

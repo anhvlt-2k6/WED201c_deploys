@@ -10,14 +10,15 @@ path = "./"
 
 htm_header = """
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
   <title>Vo Luu Tuong Anh - WED201c Repository</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="anhvlt-2k6" />
-  <meta name="robots" content="none" />
-</head>
-<body>
+  </head>
+  <body>
   <h1>WED201c Repository for submission</h1>
   <p>
     Below are the list of deployed/designed website that maybe use for
